@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public List<GameObject> fruits = new List<GameObject>();
+    public List<GameObject> fruits;
 
     void Start()
     {
@@ -13,8 +13,12 @@ public class Spawner : MonoBehaviour
 
     void Spawn()
     {
-        int random = Random.Range(1, 6);
+        var fruit = fruits[Random.Range(0, fruits.Count)];
 
+
+        Instantiate(fruit);
+        /*
+        int random = Random.Range(1, 6);
         for (int i = 0; i < random; i++)
         {
             int randomFruit = Random.Range(0, fruits.Count);
@@ -23,5 +27,6 @@ public class Spawner : MonoBehaviour
 
             obj.transform.position = new Vector3(Random.Range(-6f, 6f), Random.Range(-6f, -3f), 0);
         }
+        */
     }
 }
