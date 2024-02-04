@@ -136,6 +136,8 @@ Transform:
   m_Children:
   - {fileID: 7622588455740931536}
   - {fileID: 7991495092909921105}
+  - {fileID: 1160769464382955198}
+  - {fileID: 670505190639817528}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &959945629235629392
@@ -212,6 +214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bac0508dfeaf67f488f498c423b247ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosionParticles: {fileID: 0}
 --- !u!1 &5292676931453418870
 GameObject:
   m_ObjectHideFlags: 0
@@ -314,3 +317,127 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!1001 &2350337066920763310
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1414460328654207420}
+    m_Modifications:
+    - target: {fileID: 3012925704311049366, guid: 3b2dc9eef16cee84cad25c32352021c7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012925704311049366, guid: 3b2dc9eef16cee84cad25c32352021c7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.59199977
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012925704311049366, guid: 3b2dc9eef16cee84cad25c32352021c7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012925704311049366, guid: 3b2dc9eef16cee84cad25c32352021c7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012925704311049366, guid: 3b2dc9eef16cee84cad25c32352021c7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012925704311049366, guid: 3b2dc9eef16cee84cad25c32352021c7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012925704311049366, guid: 3b2dc9eef16cee84cad25c32352021c7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012925704311049366, guid: 3b2dc9eef16cee84cad25c32352021c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012925704311049366, guid: 3b2dc9eef16cee84cad25c32352021c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012925704311049366, guid: 3b2dc9eef16cee84cad25c32352021c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9111274316523036674, guid: 3b2dc9eef16cee84cad25c32352021c7, type: 3}
+      propertyPath: m_Name
+      value: Bomb Spark Particles
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3b2dc9eef16cee84cad25c32352021c7, type: 3}
+--- !u!4 &670505190639817528 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3012925704311049366, guid: 3b2dc9eef16cee84cad25c32352021c7, type: 3}
+  m_PrefabInstance: {fileID: 2350337066920763310}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4169263570700281199
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1414460328654207420}
+    m_Modifications:
+    - target: {fileID: 3010606379963235281, guid: 911778d5e48a52d44beb18d8f7192305, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3010606379963235281, guid: 911778d5e48a52d44beb18d8f7192305, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.592
+      objectReference: {fileID: 0}
+    - target: {fileID: 3010606379963235281, guid: 911778d5e48a52d44beb18d8f7192305, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3010606379963235281, guid: 911778d5e48a52d44beb18d8f7192305, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3010606379963235281, guid: 911778d5e48a52d44beb18d8f7192305, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3010606379963235281, guid: 911778d5e48a52d44beb18d8f7192305, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3010606379963235281, guid: 911778d5e48a52d44beb18d8f7192305, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3010606379963235281, guid: 911778d5e48a52d44beb18d8f7192305, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3010606379963235281, guid: 911778d5e48a52d44beb18d8f7192305, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3010606379963235281, guid: 911778d5e48a52d44beb18d8f7192305, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8439104018733306798, guid: 911778d5e48a52d44beb18d8f7192305, type: 3}
+      propertyPath: m_Name
+      value: Bomb Smoke Particles
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 911778d5e48a52d44beb18d8f7192305, type: 3}
+--- !u!4 &1160769464382955198 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3010606379963235281, guid: 911778d5e48a52d44beb18d8f7192305, type: 3}
+  m_PrefabInstance: {fileID: 4169263570700281199}
+  m_PrefabAsset: {fileID: 0}
