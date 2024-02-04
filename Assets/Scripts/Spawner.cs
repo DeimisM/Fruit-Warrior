@@ -15,18 +15,8 @@ public class Spawner : MonoBehaviour
     {
         var fruit = fruits[Random.Range(0, fruits.Count)];
 
+        GameObject obj = Instantiate(fruit);
 
-        Instantiate(fruit);
-        /*
-        int random = Random.Range(1, 6);
-        for (int i = 0; i < random; i++)
-        {
-            int randomFruit = Random.Range(0, fruits.Count);
-
-            GameObject obj = Instantiate(fruits[randomFruit]);
-
-            obj.transform.position = new Vector3(Random.Range(-6f, 6f), Random.Range(-6f, -3f), 0);
-        }
-        */
+        obj.transform.position = new Vector3(Random.Range(-6f, 6f), Random.Range(-6f, -3f), 0);
     }
 }
