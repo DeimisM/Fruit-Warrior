@@ -20,7 +20,11 @@ public class Spawner : MonoBehaviour
                 var go = Instantiate(prefab);
                 go.transform.position = new Vector3(fruit.x, -5f, 0);
 
-                await new WaitForSeconds(3f);
+                var rigidbody2D = go.GetComponent<Rigidbody2D>();
+                rigidbody2D.velocity = fruit.velocity;
+                await new WaitForSeconds(fruit.delay);
+
+                //await new WaitForSeconds(3f);
             }
         }
         //InvokeRepeating(nameof(Spawn), 1f, 1f);
