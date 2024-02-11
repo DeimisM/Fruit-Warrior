@@ -6,7 +6,7 @@ public class Spawner : MonoBehaviour
 {
     //public List<GameObject> fruits;
     public GameObject bombPrefab;
-    public GameObject fruitPrefab;
+    public List<GameObject> fruitPrefabs;
     public List<Wave> waves;
 
 
@@ -16,7 +16,9 @@ public class Spawner : MonoBehaviour
         {
             foreach(var fruit in wave.items)
             {
-                var prefab = fruit.isBomb ? bombPrefab : fruitPrefab;    // sutrumpintas if'as
+                var randomFruit = fruitPrefabs[Random.Range(0, fruitPrefabs.Count)];
+                
+                var prefab = fruit.isBomb ? bombPrefab : randomFruit;    // sutrumpintas if'as
                 var go = Instantiate(prefab);
                 go.transform.position = new Vector3(fruit.x, -5f, 0);
 

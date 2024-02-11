@@ -7,6 +7,11 @@ public class Knife : MonoBehaviour
 {
     Rigidbody2D rb;
 
+    public int comboCount;
+    public float comboTimeLeft;
+
+    public List<AudioClip> comboSounds;
+
     void Start()
     {
         Application.targetFrameRate = 60;
@@ -21,6 +26,16 @@ public class Knife : MonoBehaviour
         //transform.position = worldPos;
         rb.MovePosition(worldPos);
 
+        comboTimeLeft -= Time.deltaTime;
+
+        if(comboTimeLeft <= 0)
+        {
+            if(comboCount > 2)
+            {
+                AudioSystem.Play(comboSounds[comboCount - 3]);
+            }
+            comboCount = 0;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -28,5 +43,8 @@ public class Knife : MonoBehaviour
         //Destroy(collision.gameObject);
         var fruit = collision.gameObject.GetComponent<Fruit>();
         fruit.Slice();
+
+        comboCount++;
+        comboTimeLeft = 0.2f;
     }
 }
